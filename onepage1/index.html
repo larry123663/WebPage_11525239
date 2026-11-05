@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="好喝咖啡，從新鮮磨豆與細心手沖開始。探索溫潤順口、不苦澀的日常咖啡。">
   <meta name="theme-color" content="#f5c94c">
-  <title>好喝咖啡｜每一口，都剛剛好</title>
+  <title>好喝咖啡｜每一口，都剛剛好。</title>
   <style>
     :root {
       color-scheme: light;
@@ -49,24 +49,7 @@
     .button:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(39,37,31,.2); }
     :focus-visible { outline: 3px solid #6c4b23; outline-offset: 4px; }
     .hero-note { margin: 20px 0 0; color: #675a3e; font-size: 12px; letter-spacing: .04em; }
-    .coffee-art { position: relative; display: grid; min-height: 480px; place-items: center; }
-    .sun { position: absolute; width: 360px; aspect-ratio: 1; border-radius: 50%; background: rgba(255,253,247,.5); }
-    .cup { position: relative; z-index: 1; width: 275px; height: 220px; margin-top: 78px; border-radius: 8px 8px 105px 105px; background: #fffdf7; box-shadow: 0 28px 35px rgba(74,56,22,.19); }
-    .cup::before { content: ""; position: absolute; top: 34px; left: 16px; right: 16px; height: 24px; border-radius: 50%; background: #765238; box-shadow: inset 0 4px 0 rgba(255,255,255,.4); }
-    .cup::after { content: ""; position: absolute; top: 68px; right: -76px; width: 94px; height: 91px; border: 20px solid #fffdf7; border-left: 0; border-radius: 0 60% 60% 0; }
-    .cup-logo { position: absolute; top: 94px; left: 0; width: 100%; text-align: center; color: var(--brown); font-size: 18px; font-weight: 900; letter-spacing: .12em; }
-    .bean { position: absolute; z-index: 2; display: grid; width: 43px; height: 62px; place-items: center; transform: rotate(34deg); border-radius: 50%; background: #79553a; box-shadow: inset -6px -2px 0 rgba(0,0,0,.12); }
-    .bean::after { content: ""; width: 3px; height: 48px; border-radius: 50%; background: #d4aa76; transform: rotate(13deg); }
-    .bean.one { top: 70px; right: 88px; }
-    .bean.two { bottom: 50px; left: 30px; transform: rotate(-25deg) scale(.75); }
-    .bean.three { top: 92px; left: 57px; transform: rotate(-46deg) scale(.55); }
-    .steam { position: absolute; top: 48px; left: 50%; display: flex; gap: 27px; transform: translateX(-50%); }
-    .steam i { width: 13px; height: 55px; border-left: 3px solid rgba(255,253,247,.85); border-radius: 50%; transform: rotate(12deg); animation: drift 2.4s ease-in-out infinite alternate; }
-    .steam i:nth-child(2) { animation-delay: .5s; }
-    .steam i:nth-child(3) { animation-delay: .9s; }
-    @keyframes drift { to { transform: translateY(-9px) rotate(-12deg); opacity: .45; } }
-    .badge { position: absolute; z-index: 3; right: 20px; bottom: 27px; display: grid; width: 106px; aspect-ratio: 1; place-content: center; border: 1px solid rgba(39,37,31,.25); border-radius: 50%; text-align: center; font-size: 12px; font-weight: 900; line-height: 1.4; transform: rotate(10deg); }
-    .badge strong { font-size: 22px; }
+    .hero-image { display: block; width: min(400px, 100%); height: 300px; justify-self: center; border-radius: 18px; object-fit: cover; }
     .section { padding: 105px 0; }
     .section-head { max-width: 640px; margin: 0 auto 50px; text-align: center; }
     .section-head .eyebrow { color: #9a741c; }
@@ -116,7 +99,7 @@
       .hero { min-height: 0; padding-bottom: 20px; }
       .hero-grid { grid-template-columns: 1fr; gap: 0; padding-top: 130px; }
       .hero-copy { font-size: 15px; }
-      .coffee-art { min-height: 390px; transform: scale(.86); margin: -8px 0; }
+      .hero-image { width: min(400px, 100%); height: 300px; margin: 24px auto 0; }
       .hero::before { top: 440px; right: -210px; }
       .hero::after { top: 480px; right: -140px; }
       .section { padding: 76px 0; }
@@ -149,12 +132,7 @@
           <a class="button" href="#promise">找到你的好喝日常 <span aria-hidden="true">↓</span></a>
           <p class="hero-note">現磨現沖・溫潤順口・每天都好喝</p>
         </div>
-        <div class="coffee-art" role="img" aria-label="一杯冒著熱氣的手沖咖啡與咖啡豆">
-          <div class="sun"></div><span class="bean one"></span><span class="bean two"></span><span class="bean three"></span>
-          <div class="steam" aria-hidden="true"><i></i><i></i><i></i></div>
-          <div class="cup"><span class="cup-logo">好喝咖啡</span></div>
-          <div class="badge"><strong>100%</strong>新鮮研磨<br>手沖好滋味</div>
-        </div>
+        <img class="hero-image" src="images/hero.jpg" alt="窗邊山景前的手沖咖啡與咖啡器具" width="400" height="300">
       </div>
     </section>
 
