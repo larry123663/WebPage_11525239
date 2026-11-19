@@ -121,6 +121,9 @@ h1 { margin-bottom: 24px; font-size: clamp(42px, 5.6vw, 68px); font-weight: 700;
 .value-list h3 { margin: 0 0 5px; font-size: 20px; }
 .value-list p { margin: 0; color: var(--muted); font-size: 14px; }
 .value-mark { color: #c4a348; font-size: 24px; text-align: center; }
+.about-philosophy { padding: 78px 0; background: var(--cream); text-align: center; }
+.about-philosophy .eyebrow { margin-bottom: 12px; }
+.about-philosophy h2 { margin: 0; font-size: clamp(30px, 3.7vw, 44px); line-height: 1.5; }
 .quote-section { padding: 88px 0; background: var(--yellow); }
 .quote-section blockquote { margin: 0 0 25px; font-family: "Noto Serif TC", serif; font-size: clamp(32px, 4vw, 48px); font-weight: 700; line-height: 1.55; }
 .quote-section .eyebrow { color: #65542b; }
@@ -189,6 +192,8 @@ h1 { margin-bottom: 24px; font-size: clamp(42px, 5.6vw, 68px); font-weight: 700;
   .about-art, .contact-art { min-height: 270px; }
   .story-section { padding-bottom: 55px; }
   .values-section { padding-top: 62px; }
+  .about-philosophy { padding: 62px 0; }
+  .about-philosophy h2 { font-size: 32px; }
   .value-list article { grid-template-columns: 38px 1fr 24px; gap: 12px; }
   .quote-section { padding: 64px 0; }
   .quote-section blockquote { font-size: 31px; }
